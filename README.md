@@ -10,8 +10,8 @@ A robust, CLI-based Bug Tracking System built in C# to manage software issues ef
 
 * **Soft-Delete Architecture:** Implements a logical deletion system where records remain in the database (for integrity) but are removed from the search index.
 * **Custom Algorithms:**
-    * **QuickSort:** A recursive implementation ($O(n \log n)$) to sort Bug IDs.
-    * **Binary Search:** An optimized search algorithm ($O(\log n)$) for instant lookup of bug reports.
+    * **QuickSort:** A recursive implementation (O(n \log n)) to sort Bug IDs.
+    * **Binary Search:** An optimized search algorithm (O(\log n)) for instant lookup of bug reports.
 * **Persistence:** Automated saving and loading of data via text file parsing (`BugData.txt`).
 * **Data Integrity:** Input validation prevents database corruption (e.g., delimited text handling).
 
