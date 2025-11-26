@@ -18,7 +18,7 @@ namespace BugTracker
 
             int choice = menuOptions();
 
-            menuFuntionality(choice, bugDB, indexList);
+            menuFunctionality(choice, bugDB, indexList);
 
             Console.ReadLine();
         }
@@ -32,7 +32,7 @@ namespace BugTracker
             Console.WriteLine("4. Assign An Employee To A Bug");
             Console.WriteLine("5. Update Bug Status");
             Console.WriteLine("6. Delete Bug Report");
-            Console.WriteLine("7. Exit");
+            Console.WriteLine("7. Save & Exit");
             Console.Write("Enter your option: ");
             int choice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -70,7 +70,7 @@ namespace BugTracker
                         break;
                     case 7:
                         bugDB.close();
-                        Console.WriteLine("Exiting program..");
+                        Console.WriteLine("Saved. Exiting program..");
                         return;
                     default:
                         Console.WriteLine("Invalid option. Please try again.");
@@ -245,4 +245,5 @@ namespace BugTracker
         }
     }
 }
+
 
