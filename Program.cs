@@ -155,13 +155,6 @@ namespace BugTracker
                     int dataBasePosition = index.getPosition();
                     BugReport bug = bugDB.getBugInfo(dataBasePosition);
                     bug.displayBug();
-
-                    /*if (bug != null && bug.isActive)
-                        
-                    else
-                    {
-                        Console.WriteLine("Bug is deleted and cannot be displayed");
-                    }*/
                 }
                 else
                 {
@@ -252,3 +245,4 @@ namespace BugTracker
         }
     }
 }
+
